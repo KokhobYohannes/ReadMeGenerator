@@ -56,11 +56,11 @@ const promptUser = () => {
   ]);
 };
 const init = async () => {
-  console.log("hi");
+  console.log("Hello!");
   try {
     const data = await promptUser();
     const readme = generateMarkdown(data);
-    await writeFileAsync("generatedREADME.md", readme);
+    await writeFileAsync("README.md", readme);
     console.log("readme.MD succesfully generated");
   } catch (err) {
     console.log(err);
