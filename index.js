@@ -9,32 +9,38 @@ const promptUser = () => {
     {
       type: "input",
       message: "What's the project title?",
-      name: "title",
+      name: "Title",
     },
     {
       type: "input",
-      message: "how do you install your app?",
-      name: "installation",
+      message: "Describe your app:",
+      name: "Description",
     },
     {
       type: "input",
-      message: "Instructions to follow",
-      name: "instructions",
+      message:
+        "What does the user need to install to run this app (ie...dependencies)?",
+      name: "Installation",
+    },
+    {
+      type: "input",
+      message: "Table of Contents.",
+      name: "Table of Contents",
     },
     {
       type: "input",
       message: "Any credits?",
-      name: "installation",
+      name: "Contributing",
     },
     {
       type: "input",
       message: "How do you use your app?",
-      name: "usage",
+      name: "Usage",
     },
     {
       type: "list",
       message: "What license did you use?",
-      name: "license",
+      name: "License",
       choices: [
         "The MIT License",
         "The GPL License",
@@ -46,12 +52,12 @@ const promptUser = () => {
     {
       type: "input",
       message: "Github Username",
-      name: "git",
+      name: "Username",
     },
     {
       type: "input",
       message: "E-mail",
-      name: "email",
+      name: "Email",
     },
   ]);
 };
